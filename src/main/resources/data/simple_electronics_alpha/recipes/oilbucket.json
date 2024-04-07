@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "simple_electronics_alpha:pla_bottle"
+    },
+    {
+      "item": "simple_electronics_alpha:pla_bottle"
+    },
+    {
+      "item": "simple_electronics_alpha:pla_bottle"
+    },
+    {
+      "item": "minecraft:bucket"
+    }
+  ],
+  "result": {
+    "item": "simple_electronics_alpha:pla_bucket",
+    "count": 1
+  }
+}

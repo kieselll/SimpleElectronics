@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "simple_electronics_alpha:pla_bucket"
+    }
+  ],
+  "result": {
+    "item": "simple_electronics_alpha:pla_dirty",
+    "count": 3
+  }
+}

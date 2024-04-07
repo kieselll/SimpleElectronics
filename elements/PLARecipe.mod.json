@@ -1,0 +1,23 @@
+{
+  "_fv": 28,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Brewing",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "brewingInputStack": {
+      "value": "CUSTOM:SeedOilBottle"
+    },
+    "brewingIngredientStack": {
+      "value": "Blocks.NETHER_WART"
+    },
+    "brewingReturnStack": {
+      "value": "CUSTOM:PlaBottle"
+    },
+    "name": "pla_recipe",
+    "namespace": "mod"
+  }
+}

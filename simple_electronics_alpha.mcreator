@@ -1,0 +1,631 @@
+{
+  "mod_elements": [
+    {
+      "name": "Resistor220",
+      "type": "item",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "resistor_220"
+    },
+    {
+      "name": "Resistor1k",
+      "type": "item",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "resistor_1k"
+    },
+    {
+      "name": "Resistor10k",
+      "type": "item",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "resistor_10k"
+    },
+    {
+      "name": "SimpleElectronicsTab",
+      "type": "tab",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "simple_electronics_tab"
+    },
+    {
+      "name": "Resistor220Recipe",
+      "type": "recipe",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "resistor_220_recipe"
+    },
+    {
+      "name": "Resistor1kRecipe",
+      "type": "recipe",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "resistor_1k_recipe"
+    },
+    {
+      "name": "Resistor10kRecipe",
+      "type": "recipe",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "resistor_10k_recipe"
+    },
+    {
+      "name": "Thermistor",
+      "type": "item",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thermistor"
+    },
+    {
+      "name": "ThermistorRecipe",
+      "type": "recipe",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thermistor_recipe"
+    },
+    {
+      "name": "Rubber",
+      "type": "item",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rubber"
+    },
+    {
+      "name": "Plastic",
+      "type": "item",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plastic"
+    },
+    {
+      "name": "RubberDrinking",
+      "type": "procedure",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rubber_drinking",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PlasticRecipe",
+      "type": "recipe",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plastic_recipe"
+    },
+    {
+      "name": "Glasses",
+      "type": "armor",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glasses",
+      "metadata": {
+        "eh": true,
+        "el": false,
+        "eb": false,
+        "ec": false
+      }
+    },
+    {
+      "name": "Watch",
+      "type": "gui",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "watch"
+    },
+    {
+      "name": "WatchItem",
+      "type": "item",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "watch_item"
+    },
+    {
+      "name": "Never",
+      "type": "procedure",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "never",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": []
+      }
+    },
+    {
+      "name": "TimerBackBack",
+      "type": "procedure",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "timer_back_back",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "WatchItemBeing",
+      "type": "procedure",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "watch_item_being",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TimerBack",
+      "type": "procedure",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "timer_back",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TimerForward",
+      "type": "procedure",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "timer_forward",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TimerForwardForward",
+      "type": "procedure",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "timer_forward_forward",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TimerPower",
+      "type": "procedure",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "timer_power",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TimerValue",
+      "type": "procedure",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "timer_value",
+      "metadata": {
+        "dependencies": []
+      }
+    },
+    {
+      "name": "Diode",
+      "type": "item",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diode"
+    },
+    {
+      "name": "Antenna",
+      "type": "item",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "antenna"
+    },
+    {
+      "name": "Boiler",
+      "type": "item",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boiler"
+    },
+    {
+      "name": "SmdButton",
+      "type": "item",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smd_button"
+    },
+    {
+      "name": "Capacitor",
+      "type": "item",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "capacitor"
+    },
+    {
+      "name": "CopperCoil",
+      "type": "item",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_coil"
+    },
+    {
+      "name": "IsolatedCopperWire",
+      "type": "item",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "isolated_copper_wire"
+    },
+    {
+      "name": "CopperWire",
+      "type": "item",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_wire"
+    },
+    {
+      "name": "LedBlue",
+      "type": "item",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "led_blue"
+    },
+    {
+      "name": "LedGreen",
+      "type": "item",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "led_green"
+    },
+    {
+      "name": "LedIR",
+      "type": "item",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "led_ir"
+    },
+    {
+      "name": "LedRGB",
+      "type": "item",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "led_rgb"
+    },
+    {
+      "name": "LedRed",
+      "type": "item",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "led_red"
+    },
+    {
+      "name": "LedWhite",
+      "type": "item",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "led_white"
+    },
+    {
+      "name": "LedYellow",
+      "type": "item",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "led_yellow"
+    },
+    {
+      "name": "Magnet",
+      "type": "item",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magnet"
+    },
+    {
+      "name": "MetalBox",
+      "type": "item",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "metal_box"
+    },
+    {
+      "name": "Photoresistor",
+      "type": "item",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "photoresistor"
+    },
+    {
+      "name": "PlaBottle",
+      "type": "item",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pla_bottle"
+    },
+    {
+      "name": "WatchItemItemInInventoryTick",
+      "type": "procedure",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "watch_item_item_in_inventory_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PlaBucket",
+      "type": "item",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pla_bucket"
+    },
+    {
+      "name": "Screen",
+      "type": "item",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "screen"
+    },
+    {
+      "name": "SeedOilBottle",
+      "type": "item",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "seed_oil_bottle"
+    },
+    {
+      "name": "SolderingIron",
+      "type": "item",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soldering_iron"
+    },
+    {
+      "name": "VariableResistor",
+      "type": "item",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "variable_resistor"
+    },
+    {
+      "name": "OIL",
+      "type": "recipe",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oil"
+    },
+    {
+      "name": "PLARecipe",
+      "type": "recipe",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pla_recipe"
+    },
+    {
+      "name": "LedBlueRecipe",
+      "type": "recipe",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "led_blue_recipe"
+    },
+    {
+      "name": "Pla",
+      "type": "item",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pla"
+    },
+    {
+      "name": "PlaDirty",
+      "type": "item",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pla_dirty"
+    },
+    {
+      "name": "PlaPurification",
+      "type": "recipe",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pla_purification"
+    },
+    {
+      "name": "PlaGranules",
+      "type": "recipe",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pla_granules"
+    },
+    {
+      "name": "LedRedRecipe",
+      "type": "recipe",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "led_red_recipe"
+    },
+    {
+      "name": "OILBUCKET",
+      "type": "recipe",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oilbucket"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.simple_electronics_alpha.watch_item": "Watch",
+      "item.simple_electronics_alpha.copper_coil": "Copper Coil",
+      "item.simple_electronics_alpha.metal_box": "Metal Box",
+      "item.simple_electronics_alpha.screen": "Screen",
+      "item.simple_electronics_alpha.resistor_1k": "Resistor",
+      "item.simple_electronics_alpha.glasses_leggings": "Glasses Leggings",
+      "item.simple_electronics_alpha.led_rgb": "RGB Led ",
+      "item.simple_electronics_alpha.variable_resistor": "Variable Resistor",
+      "item.simple_electronics_alpha.rubber": "Rubber",
+      "item.simple_electronics_alpha.led_yellow": "Yellow Led ",
+      "item.simple_electronics_alpha.led_blue": "Blue Led ",
+      "item.simple_electronics_alpha.photoresistor": "Photoresistor",
+      "item.simple_electronics_alpha.led_red": "Red Led ",
+      "item.simple_electronics_alpha.glasses_boots": "Glasses Boots",
+      "item.simple_electronics_alpha.copper_wire": "Copper Wire",
+      "item.simple_electronics_alpha.seed_oil_bottle": "Seed Oil Bottle",
+      "item.simple_electronics_alpha.soldering_iron": "Seed oil bottle",
+      "item.simple_electronics_alpha.glasses_chestplate": "Glasses Body",
+      "item.simple_electronics_alpha.magnet": "Magnet",
+      "item.simple_electronics_alpha.antenna": "Antenna",
+      "item.simple_electronics_alpha.glasses_helmet": "Glasses Helmet",
+      "item.simple_electronics_alpha.pla_bucket": "Pla Bottle",
+      "item.simple_electronics_alpha.pla": "Pla Granules",
+      "item.simple_electronics_alpha.capacitor": "Capacitor",
+      "item.simple_electronics_alpha.resistor_220": "Resistor",
+      "item.simple_electronics_alpha.led_ir": "IR Led ",
+      "item.simple_electronics_alpha.boiler": "Boiler",
+      "item.simple_electronics_alpha.led_white": "White Led ",
+      "item.simple_electronics_alpha.plastic": "Plastic",
+      "itemGroup.tabsimple_electronics_tab": "Simple Electronics",
+      "item.simple_electronics_alpha.diode": "Diode",
+      "item.simple_electronics_alpha.isolated_copper_wire": "Isolated Copper Wire",
+      "item.simple_electronics_alpha.led_green": "Green Led ",
+      "item.simple_electronics_alpha.pla_dirty": "Dirty Pla",
+      "item.simple_electronics_alpha.resistor_10k": "Resistor",
+      "item.simple_electronics_alpha.thermistor": "Thermistor",
+      "item.simple_electronics_alpha.smd_button": "Button",
+      "item.simple_electronics_alpha.pla_bottle": "Pla Bottle"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "simple_electronics_alpha",
+    "modName": "Simple Electronics alpha",
+    "version": "1.0.0",
+    "author": "Кирилл, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.18.2",
+    "modElementsPackage": "net.mcreator.simpleelectronicsalpha",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202200120510
+}

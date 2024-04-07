@@ -1,0 +1,11 @@
+{
+  "_fv": 28,
+  "_type": "tab",
+  "definition": {
+    "name": "Simple Electronics",
+    "icon": {
+      "value": "CUSTOM:LedYellow"
+    },
+    "showSearch": false
+  }
+}
