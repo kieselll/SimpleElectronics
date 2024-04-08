@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    "678"
+  ],
+  "key": {
+    "1": {
+      "item": "simple_electronics_alpha:smd_button"
+    },
+    "3": {
+      "item": "simple_electronics_alpha:screen"
+    },
+    "4": {
+      "item": "simple_electronics_alpha:metal_box"
+    },
+    "5": {
+      "item": "simple_electronics_alpha:screen"
+    },
+    "6": {
+      "item": "simple_electronics_alpha:copper_coil"
+    },
+    "7": {
+      "item": "simple_electronics_alpha:copper_wire"
+    },
+    "8": {
+      "item": "simple_electronics_alpha:capacitor"
+    }
+  },
+  "result": {
+    "item": "simple_electronics_alpha:watch_item",
+    "count": 1
+  }
+}

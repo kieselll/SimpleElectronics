@@ -11,6 +11,7 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.Explosion;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.MinecraftServer;
@@ -62,8 +63,8 @@ public class WatchItemItemInInventoryTickProcedure {
 											_level.explode(null, x, y, z, 4, Explosion.BlockInteraction.BREAK);
 										{
 											ItemStack _isc = itemstackiterator;
-											final ItemStack _setstack = new ItemStack(Blocks.AIR);
-											final int _sltid = 1;
+											final ItemStack _setstack = new ItemStack(Items.STICK);
+											final int _sltid = 2;
 											_setstack.setCount(1);
 											_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
 												if (capability instanceof IItemHandlerModifiable) {
@@ -82,8 +83,8 @@ public class WatchItemItemInInventoryTickProcedure {
 									}.getItemStack(2, itemstackiterator)).getItem() == Blocks.TNT.asItem()) {
 										{
 											ItemStack _isc = itemstackiterator;
-											final ItemStack _setstack = new ItemStack(Blocks.AIR);
-											final int _sltid = 2;
+											final ItemStack _setstack = new ItemStack(Items.STICK);
+											final int _sltid = 3;
 											_setstack.setCount(1);
 											_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
 												if (capability instanceof IItemHandlerModifiable) {
@@ -104,8 +105,8 @@ public class WatchItemItemInInventoryTickProcedure {
 									}.getItemStack(3, itemstackiterator)).getItem() == Blocks.TNT.asItem()) {
 										{
 											ItemStack _isc = itemstackiterator;
-											final ItemStack _setstack = new ItemStack(Blocks.AIR);
-											final int _sltid = 3;
+											final ItemStack _setstack = new ItemStack(Items.STICK);
+											final int _sltid = 4;
 											_setstack.setCount(1);
 											_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
 												if (capability instanceof IItemHandlerModifiable) {

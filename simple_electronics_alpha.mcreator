@@ -588,6 +588,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "led_yellow_recipe"
+    },
+    {
+      "name": "WatchRecipe",
+      "type": "recipe",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "watch_recipe"
     }
   ],
   "variable_elements": [],
