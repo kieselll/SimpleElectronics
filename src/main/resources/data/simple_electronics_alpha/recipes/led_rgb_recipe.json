@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "simple_electronics_alpha:pla"
+    },
+    "3": {
+      "item": "simple_electronics_alpha:led_red"
+    },
+    "4": {
+      "item": "simple_electronics_alpha:led_green"
+    },
+    "5": {
+      "item": "simple_electronics_alpha:led_blue"
+    },
+    "7": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "simple_electronics_alpha:led_rgb",
+    "count": 2
+  }
+}

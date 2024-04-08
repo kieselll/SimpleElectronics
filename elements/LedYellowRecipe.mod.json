@@ -5,42 +5,42 @@
     "recipeType": "Crafting",
     "xpReward": 0.0,
     "cookingTime": 200,
-    "recipeRetstackSize": 1,
+    "recipeRetstackSize": 4,
     "group": "",
-    "recipeShapeless": true,
+    "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "Items.WATER_BUCKET"
+        "value": ""
       },
       {
-        "value": "CUSTOM:Rubber"
-      },
-      {
-        "value": "CUSTOM:RubberBottle"
+        "value": "Items.DYE#11"
       },
       {
         "value": ""
       },
       {
-        "value": ""
+        "value": "CUSTOM:Pla"
+      },
+      {
+        "value": "CUSTOM:Diode"
+      },
+      {
+        "value": "CUSTOM:Pla"
       },
       {
         "value": ""
       },
       {
-        "value": ""
-      },
-      {
-        "value": ""
+        "value": "Items.IRON_INGOT"
       },
       {
         "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Plastic"
+      "value": "CUSTOM:LedYellow"
     },
-    "name": "plastic_recipe",
+    "name": "led_yellow_recipe",
     "namespace": "mod"
   }
 }

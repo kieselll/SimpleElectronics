@@ -90,7 +90,7 @@ public class WatchItemItem extends Item {
 	@Override
 	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
 		super.inventoryTick(itemstack, world, entity, slot, selected);
-		WatchItemItemInInventoryTickProcedure.execute(world, itemstack);
+		WatchItemItemInInventoryTickProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), itemstack);
 	}
 
 	@Override

@@ -73,22 +73,6 @@
       "registry_name": "thermistor_recipe"
     },
     {
-      "name": "Rubber",
-      "type": "item",
-      "sortid": 5,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "rubber"
-    },
-    {
-      "name": "Plastic",
-      "type": "item",
-      "sortid": 6,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "plastic"
-    },
-    {
       "name": "RubberDrinking",
       "type": "procedure",
       "sortid": 13,
@@ -103,14 +87,6 @@
           }
         ]
       }
-    },
-    {
-      "name": "PlasticRecipe",
-      "type": "recipe",
-      "sortid": 16,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "plastic_recipe"
     },
     {
       "name": "Glasses",
@@ -443,6 +419,18 @@
             "type": "itemstack"
           },
           {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
             "name": "world",
             "type": "world"
           }
@@ -560,6 +548,46 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "oilbucket"
+    },
+    {
+      "name": "LedGreenRecipe",
+      "type": "recipe",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "led_green_recipe"
+    },
+    {
+      "name": "LedIRRecipe",
+      "type": "recipe",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "led_ir_recipe"
+    },
+    {
+      "name": "LedRGBRecipe",
+      "type": "recipe",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "led_rgb_recipe"
+    },
+    {
+      "name": "LedWhiteRecipe",
+      "type": "recipe",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "led_white_recipe"
+    },
+    {
+      "name": "LedYellowRecipe",
+      "type": "recipe",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "led_yellow_recipe"
     }
   ],
   "variable_elements": [],
@@ -574,7 +602,6 @@
       "item.simple_electronics_alpha.glasses_leggings": "Glasses Leggings",
       "item.simple_electronics_alpha.led_rgb": "RGB Led ",
       "item.simple_electronics_alpha.variable_resistor": "Variable Resistor",
-      "item.simple_electronics_alpha.rubber": "Rubber",
       "item.simple_electronics_alpha.led_yellow": "Yellow Led ",
       "item.simple_electronics_alpha.led_blue": "Blue Led ",
       "item.simple_electronics_alpha.photoresistor": "Photoresistor",
@@ -594,7 +621,6 @@
       "item.simple_electronics_alpha.led_ir": "IR Led ",
       "item.simple_electronics_alpha.boiler": "Boiler",
       "item.simple_electronics_alpha.led_white": "White Led ",
-      "item.simple_electronics_alpha.plastic": "Plastic",
       "itemGroup.tabsimple_electronics_tab": "Simple Electronics",
       "item.simple_electronics_alpha.diode": "Diode",
       "item.simple_electronics_alpha.isolated_copper_wire": "Isolated Copper Wire",
