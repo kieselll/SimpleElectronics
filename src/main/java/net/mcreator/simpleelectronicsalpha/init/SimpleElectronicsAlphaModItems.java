@@ -8,7 +8,10 @@ import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
 
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.simpleelectronicsalpha.item.WatchItemItem;
 import net.mcreator.simpleelectronicsalpha.item.VariableResistorItem;
@@ -42,6 +45,7 @@ import net.mcreator.simpleelectronicsalpha.item.CopperCoilItem;
 import net.mcreator.simpleelectronicsalpha.item.CapacitorItem;
 import net.mcreator.simpleelectronicsalpha.item.BoilerItem;
 import net.mcreator.simpleelectronicsalpha.item.AntennaItem;
+import net.mcreator.simpleelectronicsalpha.item.AABatteryItem;
 import net.mcreator.simpleelectronicsalpha.SimpleElectronicsAlphaMod;
 
 public class SimpleElectronicsAlphaModItems {
@@ -78,4 +82,13 @@ public class SimpleElectronicsAlphaModItems {
 	public static final RegistryObject<Item> VARIABLE_RESISTOR = REGISTRY.register("variable_resistor", () -> new VariableResistorItem());
 	public static final RegistryObject<Item> PLA = REGISTRY.register("pla", () -> new PlaItem());
 	public static final RegistryObject<Item> PLA_DIRTY = REGISTRY.register("pla_dirty", () -> new PlaDirtyItem());
+	public static final RegistryObject<Item> AA_BATTERY = REGISTRY.register("aa_battery", () -> new AABatteryItem());
+	public static final RegistryObject<Item> TIMER_BOMB = block(SimpleElectronicsAlphaModBlocks.TIMER_BOMB,
+			SimpleElectronicsAlphaModTabs.TAB_SIMPLE_ELECTRONICS_TAB);
+	public static final RegistryObject<Item> TABLE = block(SimpleElectronicsAlphaModBlocks.TABLE,
+			SimpleElectronicsAlphaModTabs.TAB_SIMPLE_ELECTRONICS_TAB);
+
+	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
+		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
+	}
 }

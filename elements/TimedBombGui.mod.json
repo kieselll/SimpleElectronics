@@ -1,0 +1,127 @@
+{
+  "_fv": 28,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 180,
+    "height": 175,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": -5,
+    "renderBgLayer": false,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "gui_lol.png",
+          "use1Xscale": false,
+          "name": "gui_lol.png",
+          "x": 123,
+          "y": 33
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": " ",
+          "width": 16,
+          "height": 20,
+          "name": " ",
+          "x": 200,
+          "y": 94
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": " ",
+          "width": 16,
+          "height": 20,
+          "name": " ",
+          "x": 217,
+          "y": 94
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": " ",
+          "width": 16,
+          "height": 20,
+          "name": " ",
+          "x": 234,
+          "y": 94
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": " ",
+          "width": 16,
+          "height": 20,
+          "name": " ",
+          "x": 251,
+          "y": 94
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:AABattery"
+          },
+          "id": 3,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #3",
+          "x": 149,
+          "y": 42
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<energy>",
+          "color": {
+            "value": -65536,
+            "falpha": 0.0
+          },
+          "name": "<energy>",
+          "x": 211,
+          "y": 46
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<ENBT:integer:tagName>:<ENBT:integer:tagName>",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "<ENBT:integer:tagName>:<ENBT:integer:tagName>",
+          "x": 198,
+          "y": 73
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": " ",
+          "width": 13,
+          "height": 20,
+          "name": " ",
+          "x": 279,
+          "y": 41
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

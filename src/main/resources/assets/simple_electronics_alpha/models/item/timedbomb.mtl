@@ -1,0 +1,13 @@
+newmtl m_c5b4b32b-5e6b-45b8-2bc9-bc9410a275a3
+Ka 0.0 0.0 0.0
+Kd 0.0 0.0 0.0
+Ks 0.0 0.0 0.0
+map_Kd simple_electronics_alpha:blocks/texture
+Ns 100.0
+d 1.0
+newmtl none
+Ka 0.0 0.0 0.0
+Kd 0.0 0.0 0.0
+Ks 0.0 0.0 0.0
+Ns 100.0
+d 1.0

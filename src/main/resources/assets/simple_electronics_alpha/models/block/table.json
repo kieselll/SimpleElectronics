@@ -1,0 +1,8 @@
+{
+  "parent": "simple_electronics_alpha:custom/table",
+  "textures": {
+    "all": "simple_electronics_alpha:blocks/texture_1",
+    "particle": "simple_electronics_alpha:blocks/texture_1",
+    "0": "simple_electronics_alpha:blocks/texture_1"
+  }
+}

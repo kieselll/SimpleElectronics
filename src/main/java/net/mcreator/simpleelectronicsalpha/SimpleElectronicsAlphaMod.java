@@ -28,6 +28,7 @@ import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.simpleelectronicsalpha.init.SimpleElectronicsAlphaModTabs;
 import net.mcreator.simpleelectronicsalpha.init.SimpleElectronicsAlphaModItems;
+import net.mcreator.simpleelectronicsalpha.init.SimpleElectronicsAlphaModBlocks;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -45,7 +46,7 @@ public class SimpleElectronicsAlphaMod {
 	public SimpleElectronicsAlphaMod() {
 		SimpleElectronicsAlphaModTabs.load();
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
-
+		SimpleElectronicsAlphaModBlocks.REGISTRY.register(bus);
 		SimpleElectronicsAlphaModItems.REGISTRY.register(bus);
 
 	}

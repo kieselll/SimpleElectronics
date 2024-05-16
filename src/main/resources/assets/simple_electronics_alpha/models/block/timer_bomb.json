@@ -1,0 +1,8 @@
+{
+  "parent": "simple_electronics_alpha:custom/timedbomb",
+  "textures": {
+    "all": "simple_electronics_alpha:blocks/tt",
+    "particle": "simple_electronics_alpha:blocks/tt",
+    "0": "simple_electronics_alpha:blocks/tt"
+  }
+}

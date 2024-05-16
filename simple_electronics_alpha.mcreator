@@ -103,14 +103,6 @@
       }
     },
     {
-      "name": "Watch",
-      "type": "gui",
-      "sortid": 18,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "watch"
-    },
-    {
       "name": "WatchItem",
       "type": "item",
       "sortid": 19,
@@ -596,6 +588,46 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "watch_recipe"
+    },
+    {
+      "name": "VariableResistorRecipe",
+      "type": "recipe",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "variable_resistor_recipe"
+    },
+    {
+      "name": "TimedBombGui",
+      "type": "gui",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "timed_bomb_gui"
+    },
+    {
+      "name": "AABattery",
+      "type": "item",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aa_battery"
+    },
+    {
+      "name": "TimerBomb",
+      "type": "block",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "timer_bomb"
+    },
+    {
+      "name": "Table",
+      "type": "block",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "table"
     }
   ],
   "variable_elements": [],
@@ -604,8 +636,8 @@
     "en_us": {
       "item.simple_electronics_alpha.watch_item": "Watch",
       "item.simple_electronics_alpha.copper_coil": "Copper Coil",
-      "item.simple_electronics_alpha.metal_box": "Metal Box",
       "item.simple_electronics_alpha.screen": "Screen",
+      "item.simple_electronics_alpha.metal_box": "Metal Box",
       "item.simple_electronics_alpha.resistor_1k": "Resistor",
       "item.simple_electronics_alpha.glasses_leggings": "Glasses Leggings",
       "item.simple_electronics_alpha.led_rgb": "RGB Led ",
@@ -613,6 +645,7 @@
       "item.simple_electronics_alpha.led_yellow": "Yellow Led ",
       "item.simple_electronics_alpha.led_blue": "Blue Led ",
       "item.simple_electronics_alpha.photoresistor": "Photoresistor",
+      "block.simple_electronics_alpha.timer_bomb": "Timer Bomb",
       "item.simple_electronics_alpha.led_red": "Red Led ",
       "item.simple_electronics_alpha.glasses_boots": "Glasses Boots",
       "item.simple_electronics_alpha.copper_wire": "Copper Wire",
@@ -620,10 +653,12 @@
       "item.simple_electronics_alpha.soldering_iron": "Seed oil bottle",
       "item.simple_electronics_alpha.glasses_chestplate": "Glasses Body",
       "item.simple_electronics_alpha.magnet": "Magnet",
+      "item.simple_electronics_alpha.aa_battery": "AA Battery",
       "item.simple_electronics_alpha.antenna": "Antenna",
       "item.simple_electronics_alpha.glasses_helmet": "Glasses Helmet",
       "item.simple_electronics_alpha.pla_bucket": "Pla Bottle",
       "item.simple_electronics_alpha.pla": "Pla Granules",
+      "block.simple_electronics_alpha.table": "Table",
       "item.simple_electronics_alpha.capacitor": "Capacitor",
       "item.simple_electronics_alpha.resistor_220": "Resistor",
       "item.simple_electronics_alpha.led_ir": "IR Led ",

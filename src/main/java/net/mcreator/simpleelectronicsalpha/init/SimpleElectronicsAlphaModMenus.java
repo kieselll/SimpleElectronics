@@ -12,7 +12,7 @@ import net.minecraftforge.event.RegistryEvent;
 import net.minecraft.world.inventory.MenuType;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 
-import net.mcreator.simpleelectronicsalpha.world.inventory.WatchMenu;
+import net.mcreator.simpleelectronicsalpha.world.inventory.TimedBombGuiMenu;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -20,7 +20,8 @@ import java.util.ArrayList;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class SimpleElectronicsAlphaModMenus {
 	private static final List<MenuType<?>> REGISTRY = new ArrayList<>();
-	public static final MenuType<WatchMenu> WATCH = register("watch", (id, inv, extraData) -> new WatchMenu(id, inv, extraData));
+	public static final MenuType<TimedBombGuiMenu> TIMED_BOMB_GUI = register("timed_bomb_gui",
+			(id, inv, extraData) -> new TimedBombGuiMenu(id, inv, extraData));
 
 	private static <T extends AbstractContainerMenu> MenuType<T> register(String registryname, IContainerFactory<T> containerFactory) {
 		MenuType<T> menuType = new MenuType<T>(containerFactory);

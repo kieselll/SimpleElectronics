@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "simple_electronics_alpha:block/timer_bomb"
+    },
+    "facing=east": {
+      "model": "simple_electronics_alpha:block/timer_bomb",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "simple_electronics_alpha:block/timer_bomb",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "simple_electronics_alpha:block/timer_bomb",
+      "y": 270
+    }
+  }
+}

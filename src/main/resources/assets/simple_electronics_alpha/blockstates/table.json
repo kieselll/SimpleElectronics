@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "simple_electronics_alpha:block/table"
+    },
+    "facing=east": {
+      "model": "simple_electronics_alpha:block/table",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "simple_electronics_alpha:block/table",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "simple_electronics_alpha:block/table",
+      "y": 270
+    }
+  }
+}
