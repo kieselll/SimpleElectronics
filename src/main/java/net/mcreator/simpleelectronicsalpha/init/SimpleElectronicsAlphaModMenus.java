@@ -20,8 +20,7 @@ import java.util.ArrayList;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class SimpleElectronicsAlphaModMenus {
 	private static final List<MenuType<?>> REGISTRY = new ArrayList<>();
-	public static final MenuType<TimedBombGuiMenu> TIMED_BOMB_GUI = register("timed_bomb_gui",
-			(id, inv, extraData) -> new TimedBombGuiMenu(id, inv, extraData));
+	public static final MenuType<TimedBombGuiMenu> TIMED_BOMB_GUI = register("timed_bomb_gui", (id, inv, extraData) -> new TimedBombGuiMenu(id, inv, extraData));
 
 	private static <T extends AbstractContainerMenu> MenuType<T> register(String registryname, IContainerFactory<T> containerFactory) {
 		MenuType<T> menuType = new MenuType<T>(containerFactory);

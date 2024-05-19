@@ -79,13 +79,9 @@ public abstract class GlassesItem extends ArmorItem {
 				@Override
 				public HumanoidModel getArmorModel(LivingEntity living, ItemStack stack, EquipmentSlot slot, HumanoidModel defaultModel) {
 					HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(),
-							Map.of("head",
-									new ModelCustomModel(Minecraft.getInstance().getEntityModels().bakeLayer(ModelCustomModel.LAYER_LOCATION)).Head,
-									"hat", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "body",
-									new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_arm",
-									new ModelPart(Collections.emptyList(), Collections.emptyMap()), "left_arm",
-									new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_leg",
-									new ModelPart(Collections.emptyList(), Collections.emptyMap()), "left_leg",
+							Map.of("head", new ModelCustomModel(Minecraft.getInstance().getEntityModels().bakeLayer(ModelCustomModel.LAYER_LOCATION)).Head, "hat", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "body",
+									new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "left_arm",
+									new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_leg", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "left_leg",
 									new ModelPart(Collections.emptyList(), Collections.emptyMap()))));
 					armorModel.crouching = living.isShiftKeyDown();
 					armorModel.riding = defaultModel.riding;
@@ -97,7 +93,7 @@ public abstract class GlassesItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "simple_electronics_alpha:textures/texture_layer_1.png";
+			return "simple_electronics_alpha:textures/entities/texture_layer_1.png";
 		}
 	}
 }

@@ -16,12 +16,14 @@ import net.minecraft.world.level.block.Block;
 
 import net.mcreator.simpleelectronicsalpha.block.TimerBombBlock;
 import net.mcreator.simpleelectronicsalpha.block.TableBlock;
+import net.mcreator.simpleelectronicsalpha.block.ExtractorBlock;
 import net.mcreator.simpleelectronicsalpha.SimpleElectronicsAlphaMod;
 
 public class SimpleElectronicsAlphaModBlocks {
 	public static final DeferredRegister<Block> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCKS, SimpleElectronicsAlphaMod.MODID);
 	public static final RegistryObject<Block> TIMER_BOMB = REGISTRY.register("timer_bomb", () -> new TimerBombBlock());
 	public static final RegistryObject<Block> TABLE = REGISTRY.register("table", () -> new TableBlock());
+	public static final RegistryObject<Block> EXTRACTOR = REGISTRY.register("extractor", () -> new ExtractorBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

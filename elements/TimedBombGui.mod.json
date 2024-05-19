@@ -1,12 +1,12 @@
 {
-  "_fv": 28,
+  "_fv": 39,
   "_type": "gui",
   "definition": {
     "type": 1,
     "width": 180,
     "height": 175,
     "inventoryOffsetX": 0,
-    "inventoryOffsetY": -5,
+    "inventoryOffsetY": 3,
     "renderBgLayer": false,
     "doesPauseGame": false,
     "components": [
@@ -15,7 +15,6 @@
         "data": {
           "image": "gui_lol.png",
           "use1Xscale": false,
-          "name": "gui_lol.png",
           "x": 123,
           "y": 33
         }
@@ -23,10 +22,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_empty",
           "text": " ",
+          "onClick": {
+            "name": "TimerBackBack"
+          },
           "width": 16,
           "height": 20,
-          "name": " ",
           "x": 200,
           "y": 94
         }
@@ -34,10 +36,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_empty1",
           "text": " ",
+          "onClick": {
+            "name": "TimerBack"
+          },
           "width": 16,
           "height": 20,
-          "name": " ",
           "x": 217,
           "y": 94
         }
@@ -45,10 +50,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_empty2",
           "text": " ",
+          "onClick": {
+            "name": "TimerForward"
+          },
           "width": 16,
           "height": 20,
-          "name": " ",
           "x": 234,
           "y": 94
         }
@@ -56,10 +64,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_empty3",
           "text": " ",
+          "onClick": {
+            "name": "TimerForwardForward"
+          },
           "width": 16,
           "height": 20,
-          "name": " ",
           "x": 251,
           "y": 94
         }
@@ -70,10 +81,14 @@
           "inputLimit": {
             "value": "CUSTOM:AABattery"
           },
-          "id": 3,
-          "disableStackInteraction": false,
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 0,
+          "disablePickup": {
+            "fixedValue": false
+          },
           "dropItemsWhenNotBound": true,
-          "name": "Slot #3",
           "x": 149,
           "y": 42
         }
@@ -81,41 +96,51 @@
       {
         "type": "label",
         "data": {
-          "text": "<energy>",
+          "name": "label_energy",
+          "text": {
+            "fixedValue": "<energy>"
+          },
           "color": {
             "value": -65536,
             "falpha": 0.0
           },
-          "name": "<energy>",
-          "x": 211,
+          "x": 225,
           "y": 46
         }
       },
       {
         "type": "label",
         "data": {
-          "text": "<ENBT:integer:tagName>:<ENBT:integer:tagName>",
+          "name": "label_bnbtnumbertimer1",
+          "text": {
+            "fixedValue": "<BNBT:number:Timer1>"
+          },
           "color": {
-            "value": -1,
+            "value": -65536,
             "falpha": 0.0
           },
-          "name": "<ENBT:integer:tagName>:<ENBT:integer:tagName>",
-          "x": 198,
+          "x": 215,
           "y": 73
         }
       },
       {
         "type": "button",
         "data": {
+          "name": "button_empty4",
           "text": " ",
+          "onClick": {
+            "name": "TimerPower"
+          },
           "width": 13,
           "height": 20,
-          "name": " ",
-          "x": 279,
+          "x": 280,
           "y": 41
         }
       }
     ],
+    "onOpen": {
+      "name": "TimedBombGuiOpened"
+    },
     "gridSettings": {
       "sx": 18,
       "sy": 18,

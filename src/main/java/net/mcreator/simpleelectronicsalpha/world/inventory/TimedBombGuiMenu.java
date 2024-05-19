@@ -18,6 +18,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.simpleelectronicsalpha.procedures.TimedBombGuiOpenedProcedure;
 import net.mcreator.simpleelectronicsalpha.init.SimpleElectronicsAlphaModMenus;
 import net.mcreator.simpleelectronicsalpha.init.SimpleElectronicsAlphaModItems;
 
@@ -38,7 +39,7 @@ public class TimedBombGuiMenu extends AbstractContainerMenu implements Supplier<
 		super(SimpleElectronicsAlphaModMenus.TIMED_BOMB_GUI, id);
 		this.entity = inv.player;
 		this.world = inv.player.level;
-		this.internal = new ItemStackHandler(4);
+		this.internal = new ItemStackHandler(1);
 		BlockPos pos = null;
 		if (extraData != null) {
 			pos = extraData.readBlockPos();
@@ -76,17 +77,19 @@ public class TimedBombGuiMenu extends AbstractContainerMenu implements Supplier<
 				}
 			}
 		}
-		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 26, 10) {
+		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 26, 10) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return (SimpleElectronicsAlphaModItems.AA_BATTERY.get() == stack.getItem());
+				return SimpleElectronicsAlphaModItems.AA_BATTERY.get() == stack.getItem();
 			}
 		}));
 		for (int si = 0; si < 3; ++si)
 			for (int sj = 0; sj < 9; ++sj)
-				this.addSlot(new Slot(inv, sj + (si + 1) * 9, 2 + 8 + sj * 18, 0 + 84 + si * 18));
+				this.addSlot(new Slot(inv, sj + (si + 1) * 9, 2 + 8 + sj * 18, 7 + 84 + si * 18));
 		for (int si = 0; si < 9; ++si)
-			this.addSlot(new Slot(inv, si, 2 + 8 + si * 18, 0 + 142));
+			this.addSlot(new Slot(inv, si, 2 + 8 + si * 18, 7 + 142));
+
+		TimedBombGuiOpenedProcedure.execute(entity);
 	}
 
 	@Override

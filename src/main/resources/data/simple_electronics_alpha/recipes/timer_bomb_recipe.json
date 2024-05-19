@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1"
+  ],
+  "key": {
+    "0": {
+      "item": "simple_electronics_alpha:watch_item"
+    },
+    "1": {
+      "item": "minecraft:tnt"
+    }
+  },
+  "result": {
+    "item": "simple_electronics_alpha:timer_bomb",
+    "count": 1
+  }
+}

@@ -6,7 +6,13 @@
       "sortid": 1,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "resistor_220"
+      "registry_name": "resistor_220",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/simple_electronics_alpha/models/item/resistor_220.json",
+          "src/main/java/net/mcreator/simpleelectronicsalpha/item/Resistor220Item.java"
+        ]
+      }
     },
     {
       "name": "Resistor1k",
@@ -14,7 +20,13 @@
       "sortid": 2,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "resistor_1k"
+      "registry_name": "resistor_1k",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/simple_electronics_alpha/models/item/resistor_1k.json",
+          "src/main/java/net/mcreator/simpleelectronicsalpha/item/Resistor1kItem.java"
+        ]
+      }
     },
     {
       "name": "Resistor10k",
@@ -22,7 +34,13 @@
       "sortid": 3,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "resistor_10k"
+      "registry_name": "resistor_10k",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simpleelectronicsalpha/item/Resistor10kItem.java",
+          "src/main/resources/assets/simple_electronics_alpha/models/item/resistor_10k.json"
+        ]
+      }
     },
     {
       "name": "SimpleElectronicsTab",
@@ -30,7 +48,10 @@
       "sortid": 8,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "simple_electronics_tab"
+      "registry_name": "simple_electronics_tab",
+      "metadata": {
+        "files": []
+      }
     },
     {
       "name": "Resistor220Recipe",
@@ -38,7 +59,12 @@
       "sortid": 9,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "resistor_220_recipe"
+      "registry_name": "resistor_220_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/simple_electronics_alpha/recipes/resistor_220_recipe.json"
+        ]
+      }
     },
     {
       "name": "Resistor1kRecipe",
@@ -46,7 +72,12 @@
       "sortid": 10,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "resistor_1k_recipe"
+      "registry_name": "resistor_1k_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/simple_electronics_alpha/recipes/resistor_1k_recipe.json"
+        ]
+      }
     },
     {
       "name": "Resistor10kRecipe",
@@ -54,7 +85,12 @@
       "sortid": 11,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "resistor_10k_recipe"
+      "registry_name": "resistor_10k_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/simple_electronics_alpha/recipes/resistor_10k_recipe.json"
+        ]
+      }
     },
     {
       "name": "Thermistor",
@@ -62,7 +98,13 @@
       "sortid": 4,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "thermistor"
+      "registry_name": "thermistor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simpleelectronicsalpha/item/ThermistorItem.java",
+          "src/main/resources/assets/simple_electronics_alpha/models/item/thermistor.json"
+        ]
+      }
     },
     {
       "name": "ThermistorRecipe",
@@ -70,7 +112,12 @@
       "sortid": 12,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "thermistor_recipe"
+      "registry_name": "thermistor_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/simple_electronics_alpha/recipes/thermistor_recipe.json"
+        ]
+      }
     },
     {
       "name": "RubberDrinking",
@@ -80,6 +127,9 @@
       "locked_code": false,
       "registry_name": "rubber_drinking",
       "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simpleelectronicsalpha/procedures/RubberDrinkingProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -99,7 +149,11 @@
         "eh": true,
         "el": false,
         "eb": false,
-        "ec": false
+        "ec": false,
+        "files": [
+          "src/main/java/net/mcreator/simpleelectronicsalpha/item/GlassesItem.java",
+          "src/main/resources/assets/simple_electronics_alpha/models/item/glasses_helmet.json"
+        ]
       }
     },
     {
@@ -108,53 +162,11 @@
       "sortid": 19,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "watch_item"
-    },
-    {
-      "name": "Never",
-      "type": "procedure",
-      "sortid": 21,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "never",
+      "registry_name": "watch_item",
       "metadata": {
-        "return_type": "logic",
-        "dependencies": []
-      }
-    },
-    {
-      "name": "TimerBackBack",
-      "type": "procedure",
-      "sortid": 22,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "timer_back_back",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "WatchItemBeing",
-      "type": "procedure",
-      "sortid": 23,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "watch_item_being",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          }
+        "files": [
+          "src/main/resources/assets/simple_electronics_alpha/models/item/watch_item.json",
+          "src/main/java/net/mcreator/simpleelectronicsalpha/item/WatchItemItem.java"
         ]
       }
     },
@@ -166,6 +178,9 @@
       "locked_code": false,
       "registry_name": "timer_back",
       "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simpleelectronicsalpha/procedures/TimerBackProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -186,26 +201,9 @@
       "locked_code": false,
       "registry_name": "timer_forward",
       "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "TimerForwardForward",
-      "type": "procedure",
-      "sortid": 26,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "timer_forward_forward",
-      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simpleelectronicsalpha/procedures/TimerForwardProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -226,23 +224,19 @@
       "locked_code": false,
       "registry_name": "timer_power",
       "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simpleelectronicsalpha/procedures/TimerPowerProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
-      }
-    },
-    {
-      "name": "TimerValue",
-      "type": "procedure",
-      "sortid": 28,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "timer_value",
-      "metadata": {
-        "dependencies": []
       }
     },
     {
@@ -251,7 +245,13 @@
       "sortid": 29,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "diode"
+      "registry_name": "diode",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simpleelectronicsalpha/item/DiodeItem.java",
+          "src/main/resources/assets/simple_electronics_alpha/models/item/diode.json"
+        ]
+      }
     },
     {
       "name": "Antenna",
@@ -259,7 +259,13 @@
       "sortid": 30,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "antenna"
+      "registry_name": "antenna",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/simple_electronics_alpha/models/item/antenna.json",
+          "src/main/java/net/mcreator/simpleelectronicsalpha/item/AntennaItem.java"
+        ]
+      }
     },
     {
       "name": "Boiler",
@@ -267,7 +273,13 @@
       "sortid": 31,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "boiler"
+      "registry_name": "boiler",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simpleelectronicsalpha/item/BoilerItem.java",
+          "src/main/resources/assets/simple_electronics_alpha/models/item/boiler.json"
+        ]
+      }
     },
     {
       "name": "SmdButton",
@@ -275,7 +287,13 @@
       "sortid": 32,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "smd_button"
+      "registry_name": "smd_button",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simpleelectronicsalpha/item/SmdButtonItem.java",
+          "src/main/resources/assets/simple_electronics_alpha/models/item/smd_button.json"
+        ]
+      }
     },
     {
       "name": "Capacitor",
@@ -283,7 +301,13 @@
       "sortid": 33,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "capacitor"
+      "registry_name": "capacitor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/simple_electronics_alpha/models/item/capacitor.json",
+          "src/main/java/net/mcreator/simpleelectronicsalpha/item/CapacitorItem.java"
+        ]
+      }
     },
     {
       "name": "CopperCoil",
@@ -291,7 +315,13 @@
       "sortid": 34,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "copper_coil"
+      "registry_name": "copper_coil",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simpleelectronicsalpha/item/CopperCoilItem.java",
+          "src/main/resources/assets/simple_electronics_alpha/models/item/copper_coil.json"
+        ]
+      }
     },
     {
       "name": "IsolatedCopperWire",
@@ -299,7 +329,13 @@
       "sortid": 35,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "isolated_copper_wire"
+      "registry_name": "isolated_copper_wire",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simpleelectronicsalpha/item/IsolatedCopperWireItem.java",
+          "src/main/resources/assets/simple_electronics_alpha/models/item/isolated_copper_wire.json"
+        ]
+      }
     },
     {
       "name": "CopperWire",
@@ -307,7 +343,13 @@
       "sortid": 36,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "copper_wire"
+      "registry_name": "copper_wire",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simpleelectronicsalpha/item/CopperWireItem.java",
+          "src/main/resources/assets/simple_electronics_alpha/models/item/copper_wire.json"
+        ]
+      }
     },
     {
       "name": "LedBlue",
@@ -315,7 +357,13 @@
       "sortid": 37,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "led_blue"
+      "registry_name": "led_blue",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/simple_electronics_alpha/models/item/led_blue.json",
+          "src/main/java/net/mcreator/simpleelectronicsalpha/item/LedBlueItem.java"
+        ]
+      }
     },
     {
       "name": "LedGreen",
@@ -323,7 +371,13 @@
       "sortid": 38,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "led_green"
+      "registry_name": "led_green",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/simple_electronics_alpha/models/item/led_green.json",
+          "src/main/java/net/mcreator/simpleelectronicsalpha/item/LedGreenItem.java"
+        ]
+      }
     },
     {
       "name": "LedIR",
@@ -331,7 +385,13 @@
       "sortid": 39,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "led_ir"
+      "registry_name": "led_ir",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/simple_electronics_alpha/models/item/led_ir.json",
+          "src/main/java/net/mcreator/simpleelectronicsalpha/item/LedIRItem.java"
+        ]
+      }
     },
     {
       "name": "LedRGB",
@@ -339,7 +399,13 @@
       "sortid": 40,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "led_rgb"
+      "registry_name": "led_rgb",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/simple_electronics_alpha/models/item/led_rgb.json",
+          "src/main/java/net/mcreator/simpleelectronicsalpha/item/LedRGBItem.java"
+        ]
+      }
     },
     {
       "name": "LedRed",
@@ -347,7 +413,13 @@
       "sortid": 41,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "led_red"
+      "registry_name": "led_red",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/simple_electronics_alpha/models/item/led_red.json",
+          "src/main/java/net/mcreator/simpleelectronicsalpha/item/LedRedItem.java"
+        ]
+      }
     },
     {
       "name": "LedWhite",
@@ -355,7 +427,13 @@
       "sortid": 42,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "led_white"
+      "registry_name": "led_white",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simpleelectronicsalpha/item/LedWhiteItem.java",
+          "src/main/resources/assets/simple_electronics_alpha/models/item/led_white.json"
+        ]
+      }
     },
     {
       "name": "LedYellow",
@@ -363,7 +441,13 @@
       "sortid": 43,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "led_yellow"
+      "registry_name": "led_yellow",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simpleelectronicsalpha/item/LedYellowItem.java",
+          "src/main/resources/assets/simple_electronics_alpha/models/item/led_yellow.json"
+        ]
+      }
     },
     {
       "name": "Magnet",
@@ -371,7 +455,13 @@
       "sortid": 44,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "magnet"
+      "registry_name": "magnet",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/simple_electronics_alpha/models/item/magnet.json",
+          "src/main/java/net/mcreator/simpleelectronicsalpha/item/MagnetItem.java"
+        ]
+      }
     },
     {
       "name": "MetalBox",
@@ -379,7 +469,13 @@
       "sortid": 45,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "metal_box"
+      "registry_name": "metal_box",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simpleelectronicsalpha/item/MetalBoxItem.java",
+          "src/main/resources/assets/simple_electronics_alpha/models/item/metal_box.json"
+        ]
+      }
     },
     {
       "name": "Photoresistor",
@@ -387,7 +483,13 @@
       "sortid": 46,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "photoresistor"
+      "registry_name": "photoresistor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simpleelectronicsalpha/item/PhotoresistorItem.java",
+          "src/main/resources/assets/simple_electronics_alpha/models/item/photoresistor.json"
+        ]
+      }
     },
     {
       "name": "PlaBottle",
@@ -395,21 +497,368 @@
       "sortid": 47,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "pla_bottle"
+      "registry_name": "pla_bottle",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/simple_electronics_alpha/models/item/pla_bottle.json",
+          "src/main/java/net/mcreator/simpleelectronicsalpha/item/PlaBottleItem.java"
+        ]
+      }
     },
     {
-      "name": "WatchItemItemInInventoryTick",
-      "type": "procedure",
-      "sortid": 48,
+      "name": "PlaBucket",
+      "type": "item",
+      "sortid": 49,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "watch_item_item_in_inventory_tick",
+      "registry_name": "pla_bucket",
       "metadata": {
+        "files": [
+          "src/main/resources/assets/simple_electronics_alpha/models/item/pla_bucket.json",
+          "src/main/java/net/mcreator/simpleelectronicsalpha/item/PlaBucketItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Screen",
+      "type": "item",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "screen",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/simple_electronics_alpha/models/item/screen.json",
+          "src/main/java/net/mcreator/simpleelectronicsalpha/item/ScreenItem.java"
+        ]
+      }
+    },
+    {
+      "name": "SeedOilBottle",
+      "type": "item",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "seed_oil_bottle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simpleelectronicsalpha/item/SeedOilBottleItem.java",
+          "src/main/resources/assets/simple_electronics_alpha/models/item/seed_oil_bottle.json"
+        ]
+      }
+    },
+    {
+      "name": "SolderingIron",
+      "type": "item",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soldering_iron",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simpleelectronicsalpha/item/SolderingIronItem.java",
+          "src/main/resources/assets/simple_electronics_alpha/models/item/soldering_iron.json"
+        ]
+      }
+    },
+    {
+      "name": "VariableResistor",
+      "type": "item",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "variable_resistor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simpleelectronicsalpha/item/VariableResistorItem.java",
+          "src/main/resources/assets/simple_electronics_alpha/models/item/variable_resistor.json"
+        ]
+      }
+    },
+    {
+      "name": "OIL",
+      "type": "recipe",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oil",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/simple_electronics_alpha/recipes/oil.json"
+        ]
+      }
+    },
+    {
+      "name": "PLARecipe",
+      "type": "recipe",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pla_recipe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simpleelectronicsalpha/recipes/brewing/PLARecipeBrewingRecipe.java"
+        ]
+      }
+    },
+    {
+      "name": "LedBlueRecipe",
+      "type": "recipe",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "led_blue_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/simple_electronics_alpha/recipes/led_blue_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Pla",
+      "type": "item",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pla",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simpleelectronicsalpha/item/PlaItem.java",
+          "src/main/resources/assets/simple_electronics_alpha/models/item/pla.json"
+        ]
+      }
+    },
+    {
+      "name": "PlaDirty",
+      "type": "item",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pla_dirty",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/simple_electronics_alpha/models/item/pla_dirty.json",
+          "src/main/java/net/mcreator/simpleelectronicsalpha/item/PlaDirtyItem.java"
+        ]
+      }
+    },
+    {
+      "name": "PlaPurification",
+      "type": "recipe",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pla_purification",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/simple_electronics_alpha/recipes/pla_purification.json"
+        ]
+      }
+    },
+    {
+      "name": "PlaGranules",
+      "type": "recipe",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pla_granules",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/simple_electronics_alpha/recipes/pla_granules.json"
+        ]
+      }
+    },
+    {
+      "name": "LedRedRecipe",
+      "type": "recipe",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "led_red_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/simple_electronics_alpha/recipes/led_red_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "OILBUCKET",
+      "type": "recipe",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oilbucket",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/simple_electronics_alpha/recipes/oilbucket.json"
+        ]
+      }
+    },
+    {
+      "name": "LedGreenRecipe",
+      "type": "recipe",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "led_green_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/simple_electronics_alpha/recipes/led_green_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "LedIRRecipe",
+      "type": "recipe",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "led_ir_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/simple_electronics_alpha/recipes/led_ir_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "LedRGBRecipe",
+      "type": "recipe",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "led_rgb_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/simple_electronics_alpha/recipes/led_rgb_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "LedWhiteRecipe",
+      "type": "recipe",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "led_white_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/simple_electronics_alpha/recipes/led_white_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "LedYellowRecipe",
+      "type": "recipe",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "led_yellow_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/simple_electronics_alpha/recipes/led_yellow_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "WatchRecipe",
+      "type": "recipe",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "watch_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/simple_electronics_alpha/recipes/watch_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "VariableResistorRecipe",
+      "type": "recipe",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "variable_resistor_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/simple_electronics_alpha/recipes/variable_resistor_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "TimedBombGui",
+      "type": "gui",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "timed_bomb_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simpleelectronicsalpha/world/inventory/TimedBombGuiMenu.java",
+          "src/main/java/net/mcreator/simpleelectronicsalpha/client/gui/TimedBombGuiScreen.java",
+          "src/main/java/net/mcreator/simpleelectronicsalpha/network/TimedBombGuiButtonMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "AABattery",
+      "type": "item",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aa_battery",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/simple_electronics_alpha/models/item/aa_battery.json",
+          "src/main/java/net/mcreator/simpleelectronicsalpha/item/AABatteryItem.java"
+        ]
+      }
+    },
+    {
+      "name": "TimerBomb",
+      "type": "block",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "timer_bomb",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simpleelectronicsalpha/block/TimerBombBlock.java",
+          "src/main/resources/assets/simple_electronics_alpha/models/item/timer_bomb.json",
+          "src/main/java/net/mcreator/simpleelectronicsalpha/block/entity/TimerBombBlockEntity.java",
+          "src/main/resources/assets/simple_electronics_alpha/blockstates/timer_bomb.json",
+          "src/main/resources/assets/simple_electronics_alpha/models/block/timer_bomb.json"
+        ]
+      }
+    },
+    {
+      "name": "Table",
+      "type": "block",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "table",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/simple_electronics_alpha/blockstates/table.json",
+          "src/main/java/net/mcreator/simpleelectronicsalpha/block/TableBlock.java",
+          "src/main/resources/assets/simple_electronics_alpha/models/block/table.json",
+          "src/main/resources/assets/simple_electronics_alpha/models/item/table.json"
+        ]
+      }
+    },
+    {
+      "name": "TimerBombUpdateTick",
+      "type": "procedure",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "timer_bomb_update_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simpleelectronicsalpha/procedures/TimerBombUpdateTickProcedure.java"
+        ],
         "dependencies": [
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
           {
             "name": "x",
             "type": "number"
@@ -430,204 +879,335 @@
       }
     },
     {
-      "name": "PlaBucket",
+      "name": "TimedBombGuiOpened",
+      "type": "procedure",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "timed_bomb_gui_opened",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simpleelectronicsalpha/procedures/TimedBombGuiOpenedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TimerForwardForward",
+      "type": "procedure",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "timer_forward_forward",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simpleelectronicsalpha/procedures/TimerForwardForwardProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TimerBackBack",
+      "type": "procedure",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "timer_back_back",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simpleelectronicsalpha/procedures/TimerBackBackProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TimerBombAdded",
+      "type": "procedure",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "timer_bomb_added",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simpleelectronicsalpha/procedures/TimerBombAddedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TimerBombRecipe",
+      "type": "recipe",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "timer_bomb_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/simple_electronics_alpha/recipes/timer_bomb_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Extractor",
+      "type": "animatedblock",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "extractor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simpleelectronicsalpha/block/model/ExtractorDisplayModel.java",
+          "src/main/java/net/mcreator/simpleelectronicsalpha/block/display/ExtractorDisplayItem.java",
+          "src/main/resources/assets/simple_electronics_alpha/models/custom/extractor_particle.json",
+          "src/main/java/net/mcreator/simpleelectronicsalpha/block/renderer/ExtractorTileRenderer.java",
+          "src/main/java/net/mcreator/simpleelectronicsalpha/block/model/ExtractorBlockModel.java",
+          "src/main/resources/assets/simple_electronics_alpha/models/item/extractor.json",
+          "src/main/java/net/mcreator/simpleelectronicsalpha/block/ExtractorBlock.java",
+          "src/main/java/net/mcreator/simpleelectronicsalpha/block/renderer/ExtractorDisplayItemRenderer.java",
+          "src/main/resources/assets/simple_electronics_alpha/blockstates/extractor.json",
+          "src/main/java/net/mcreator/simpleelectronicsalpha/block/entity/ExtractorTileEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "ExtractorOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "extractor_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simpleelectronicsalpha/procedures/ExtractorOnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Accumulator",
       "type": "item",
-      "sortid": 49,
+      "sortid": 83,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "pla_bucket"
+      "registry_name": "accumulator",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/simple_electronics_alpha/models/item/accumulator.json",
+          "src/main/java/net/mcreator/simpleelectronicsalpha/item/AccumulatorItem.java"
+        ]
+      }
     },
     {
-      "name": "Screen",
+      "name": "Motherboard",
       "type": "item",
-      "sortid": 50,
+      "sortid": 84,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "screen"
+      "registry_name": "motherboard",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simpleelectronicsalpha/item/MotherboardItem.java",
+          "src/main/resources/assets/simple_electronics_alpha/models/item/motherboard.json"
+        ]
+      }
     },
     {
-      "name": "SeedOilBottle",
+      "name": "Camera",
       "type": "item",
-      "sortid": 51,
+      "sortid": 85,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "seed_oil_bottle"
+      "registry_name": "camera",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simpleelectronicsalpha/item/CameraItem.java",
+          "src/main/resources/assets/simple_electronics_alpha/models/item/camera.json"
+        ]
+      }
     },
     {
-      "name": "SolderingIron",
+      "name": "Cord",
       "type": "item",
-      "sortid": 52,
+      "sortid": 86,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "soldering_iron"
+      "registry_name": "cord",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/simple_electronics_alpha/models/item/cord.json",
+          "src/main/java/net/mcreator/simpleelectronicsalpha/item/CordItem.java"
+        ]
+      }
     },
     {
-      "name": "VariableResistor",
+      "name": "PowerSupply",
       "type": "item",
-      "sortid": 53,
+      "sortid": 87,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "variable_resistor"
+      "registry_name": "power_supply",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simpleelectronicsalpha/item/PowerSupplyItem.java",
+          "src/main/resources/assets/simple_electronics_alpha/models/item/power_supply.json"
+        ]
+      }
     },
     {
-      "name": "OIL",
-      "type": "recipe",
-      "sortid": 54,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "oil"
-    },
-    {
-      "name": "PLARecipe",
-      "type": "recipe",
-      "sortid": 55,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "pla_recipe"
-    },
-    {
-      "name": "LedBlueRecipe",
-      "type": "recipe",
-      "sortid": 56,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "led_blue_recipe"
-    },
-    {
-      "name": "Pla",
+      "name": "Mmory",
       "type": "item",
-      "sortid": 57,
+      "sortid": 88,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "pla"
+      "registry_name": "mmory",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/simple_electronics_alpha/models/item/mmory.json",
+          "src/main/java/net/mcreator/simpleelectronicsalpha/item/MmoryItem.java"
+        ]
+      }
     },
     {
-      "name": "PlaDirty",
+      "name": "CPU",
       "type": "item",
-      "sortid": 58,
+      "sortid": 89,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "pla_dirty"
+      "registry_name": "cpu",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/simple_electronics_alpha/models/item/cpu.json",
+          "src/main/java/net/mcreator/simpleelectronicsalpha/item/CPUItem.java"
+        ]
+      }
     },
     {
-      "name": "PlaPurification",
-      "type": "recipe",
-      "sortid": 59,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "pla_purification"
-    },
-    {
-      "name": "PlaGranules",
-      "type": "recipe",
-      "sortid": 60,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "pla_granules"
-    },
-    {
-      "name": "LedRedRecipe",
-      "type": "recipe",
-      "sortid": 61,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "led_red_recipe"
-    },
-    {
-      "name": "OILBUCKET",
-      "type": "recipe",
-      "sortid": 62,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "oilbucket"
-    },
-    {
-      "name": "LedGreenRecipe",
-      "type": "recipe",
-      "sortid": 63,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "led_green_recipe"
-    },
-    {
-      "name": "LedIRRecipe",
-      "type": "recipe",
-      "sortid": 64,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "led_ir_recipe"
-    },
-    {
-      "name": "LedRGBRecipe",
-      "type": "recipe",
-      "sortid": 65,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "led_rgb_recipe"
-    },
-    {
-      "name": "LedWhiteRecipe",
-      "type": "recipe",
-      "sortid": 66,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "led_white_recipe"
-    },
-    {
-      "name": "LedYellowRecipe",
-      "type": "recipe",
-      "sortid": 67,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "led_yellow_recipe"
-    },
-    {
-      "name": "WatchRecipe",
-      "type": "recipe",
-      "sortid": 68,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "watch_recipe"
-    },
-    {
-      "name": "VariableResistorRecipe",
-      "type": "recipe",
-      "sortid": 69,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "variable_resistor_recipe"
-    },
-    {
-      "name": "TimedBombGui",
-      "type": "gui",
-      "sortid": 70,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "timed_bomb_gui"
-    },
-    {
-      "name": "AABattery",
+      "name": "Ram",
       "type": "item",
-      "sortid": 71,
+      "sortid": 90,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "aa_battery"
+      "registry_name": "ram",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/simple_electronics_alpha/models/item/ram.json",
+          "src/main/java/net/mcreator/simpleelectronicsalpha/item/RamItem.java"
+        ]
+      }
     },
     {
-      "name": "TimerBomb",
-      "type": "block",
-      "sortid": 72,
+      "name": "EmptySpool",
+      "type": "item",
+      "sortid": 91,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "timer_bomb"
+      "registry_name": "empty_spool",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simpleelectronicsalpha/item/EmptySpoolItem.java",
+          "src/main/resources/assets/simple_electronics_alpha/models/item/empty_spool.json"
+        ]
+      }
     },
     {
-      "name": "Table",
-      "type": "block",
-      "sortid": 73,
+      "name": "PlaSpool",
+      "type": "item",
+      "sortid": 92,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "table"
+      "registry_name": "pla_spool",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/simple_electronics_alpha/models/item/pla_spool.json",
+          "src/main/java/net/mcreator/simpleelectronicsalpha/item/PlaSpoolItem.java"
+        ]
+      }
+    },
+    {
+      "name": "ServoMotor",
+      "type": "item",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "servo_motor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/simple_electronics_alpha/models/item/servo_motor.json",
+          "src/main/java/net/mcreator/simpleelectronicsalpha/item/ServoMotorItem.java"
+        ]
+      }
+    },
+    {
+      "name": "StepperMotor",
+      "type": "item",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stepper_motor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/simple_electronics_alpha/models/item/stepper_motor.json",
+          "src/main/java/net/mcreator/simpleelectronicsalpha/item/StepperMotorItem.java"
+        ]
+      }
+    },
+    {
+      "name": "CordRecipe",
+      "type": "recipe",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cord_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/simple_electronics_alpha/recipes/cord_recipe.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -636,41 +1216,61 @@
     "en_us": {
       "item.simple_electronics_alpha.watch_item": "Watch",
       "item.simple_electronics_alpha.copper_coil": "Copper Coil",
-      "item.simple_electronics_alpha.screen": "Screen",
       "item.simple_electronics_alpha.metal_box": "Metal Box",
       "item.simple_electronics_alpha.resistor_1k": "Resistor",
-      "item.simple_electronics_alpha.glasses_leggings": "Glasses Leggings",
-      "item.simple_electronics_alpha.led_rgb": "RGB Led ",
-      "item.simple_electronics_alpha.variable_resistor": "Variable Resistor",
       "item.simple_electronics_alpha.led_yellow": "Yellow Led ",
       "item.simple_electronics_alpha.led_blue": "Blue Led ",
-      "item.simple_electronics_alpha.photoresistor": "Photoresistor",
-      "block.simple_electronics_alpha.timer_bomb": "Timer Bomb",
       "item.simple_electronics_alpha.led_red": "Red Led ",
-      "item.simple_electronics_alpha.glasses_boots": "Glasses Boots",
       "item.simple_electronics_alpha.copper_wire": "Copper Wire",
-      "item.simple_electronics_alpha.seed_oil_bottle": "Seed Oil Bottle",
-      "item.simple_electronics_alpha.soldering_iron": "Seed oil bottle",
       "item.simple_electronics_alpha.glasses_chestplate": "Glasses Body",
-      "item.simple_electronics_alpha.magnet": "Magnet",
       "item.simple_electronics_alpha.aa_battery": "AA Battery",
+      "item.simple_electronics_alpha.ram": "Ram",
+      "item.simple_electronics_alpha.cord": "Cord",
       "item.simple_electronics_alpha.antenna": "Antenna",
-      "item.simple_electronics_alpha.glasses_helmet": "Glasses Helmet",
-      "item.simple_electronics_alpha.pla_bucket": "Pla Bottle",
-      "item.simple_electronics_alpha.pla": "Pla Granules",
+      "item.simple_electronics_alpha.camera": "Camera",
+      "item.simple_electronics_alpha.cpu": "CPU",
       "block.simple_electronics_alpha.table": "Table",
+      "item.simple_electronics_alpha.motherboard": "Motherboard",
       "item.simple_electronics_alpha.capacitor": "Capacitor",
       "item.simple_electronics_alpha.resistor_220": "Resistor",
-      "item.simple_electronics_alpha.led_ir": "IR Led ",
-      "item.simple_electronics_alpha.boiler": "Boiler",
       "item.simple_electronics_alpha.led_white": "White Led ",
-      "itemGroup.tabsimple_electronics_tab": "Simple Electronics",
+      "block.simple_electronics_alpha.extractor": "Extractor",
+      "item.simple_electronics_alpha.stepper_motor": "Stepper Motor",
       "item.simple_electronics_alpha.diode": "Diode",
       "item.simple_electronics_alpha.isolated_copper_wire": "Isolated Copper Wire",
       "item.simple_electronics_alpha.led_green": "Green Led ",
       "item.simple_electronics_alpha.pla_dirty": "Dirty Pla",
-      "item.simple_electronics_alpha.resistor_10k": "Resistor",
+      "gui.simple_electronics_alpha.timed_bomb_gui.button_empty": " ",
       "item.simple_electronics_alpha.thermistor": "Thermistor",
+      "gui.simple_electronics_alpha.timed_bomb_gui.label_bnbtnumbertimer1": "\u003cBNBT:number:Timer1\u003e",
+      "item.simple_electronics_alpha.screen": "Screen",
+      "item.simple_electronics_alpha.pla_spool": "Pla Spool",
+      "item.simple_electronics_alpha.empty_spool": "Empty Spool",
+      "item.simple_electronics_alpha.glasses_leggings": "Glasses Leggings",
+      "item.simple_electronics_alpha.led_rgb": "RGB Led ",
+      "item.simple_electronics_alpha.variable_resistor": "Variable Resistor",
+      "item.simple_electronics_alpha.servo_motor": "Servo Motor",
+      "item.simple_electronics_alpha.photoresistor": "Photoresistor",
+      "item.simple_electronics_alpha.accumulator": "Accumulator",
+      "block.simple_electronics_alpha.timer_bomb": "Timer Bomb",
+      "item.simple_electronics_alpha.glasses_boots": "Glasses Boots",
+      "item.simple_electronics_alpha.seed_oil_bottle": "Seed Oil Bottle",
+      "item.simple_electronics_alpha.soldering_iron": "Seed oil bottle",
+      "item.simple_electronics_alpha.magnet": "Magnet",
+      "gui.simple_electronics_alpha.timed_bomb_gui.label_energy": "\u003cenergy\u003e",
+      "item.simple_electronics_alpha.power_supply": "Power Supply",
+      "item.simple_electronics_alpha.glasses_helmet": "Glasses Helmet",
+      "item.simple_electronics_alpha.pla_bucket": "Pla Bottle",
+      "item.simple_electronics_alpha.pla": "Pla Granules",
+      "item.simple_electronics_alpha.led_ir": "IR Led ",
+      "gui.simple_electronics_alpha.timed_bomb_gui.button_empty4": " ",
+      "item.simple_electronics_alpha.boiler": "Boiler",
+      "gui.simple_electronics_alpha.timed_bomb_gui.button_empty3": " ",
+      "gui.simple_electronics_alpha.timed_bomb_gui.button_empty2": " ",
+      "gui.simple_electronics_alpha.timed_bomb_gui.button_empty1": " ",
+      "item.simple_electronics_alpha.mmory": "Memory",
+      "itemGroup.tabsimple_electronics_tab": "Simple Electronics",
+      "item.simple_electronics_alpha.resistor_10k": "Resistor",
       "item.simple_electronics_alpha.smd_button": "Button",
       "item.simple_electronics_alpha.pla_bottle": "Pla Bottle"
     }
@@ -691,10 +1291,13 @@
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
-    "mcreatorDependencies": [],
+    "mcreatorDependencies": [
+      "geckolib"
+    ],
     "currentGenerator": "forge-1.18.2",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.simpleelectronicsalpha",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202200120510
+  "mcreatorVersion": 202300110610
 }

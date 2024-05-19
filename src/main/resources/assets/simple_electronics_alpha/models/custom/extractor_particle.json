@@ -1,0 +1,7 @@
+
+{
+  "parent": "simple_electronics_alpha:displaysettings/extractor_-_converted.item",
+  "textures": {
+    "particle": "simple_electronics_alpha:blocks/texture-1"
+  }
+}

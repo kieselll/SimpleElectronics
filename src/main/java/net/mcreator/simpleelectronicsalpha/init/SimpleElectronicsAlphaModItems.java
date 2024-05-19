@@ -16,18 +16,25 @@ import net.minecraft.world.item.BlockItem;
 import net.mcreator.simpleelectronicsalpha.item.WatchItemItem;
 import net.mcreator.simpleelectronicsalpha.item.VariableResistorItem;
 import net.mcreator.simpleelectronicsalpha.item.ThermistorItem;
+import net.mcreator.simpleelectronicsalpha.item.StepperMotorItem;
 import net.mcreator.simpleelectronicsalpha.item.SolderingIronItem;
 import net.mcreator.simpleelectronicsalpha.item.SmdButtonItem;
+import net.mcreator.simpleelectronicsalpha.item.ServoMotorItem;
 import net.mcreator.simpleelectronicsalpha.item.SeedOilBottleItem;
 import net.mcreator.simpleelectronicsalpha.item.ScreenItem;
 import net.mcreator.simpleelectronicsalpha.item.Resistor220Item;
 import net.mcreator.simpleelectronicsalpha.item.Resistor1kItem;
 import net.mcreator.simpleelectronicsalpha.item.Resistor10kItem;
+import net.mcreator.simpleelectronicsalpha.item.RamItem;
+import net.mcreator.simpleelectronicsalpha.item.PowerSupplyItem;
+import net.mcreator.simpleelectronicsalpha.item.PlaSpoolItem;
 import net.mcreator.simpleelectronicsalpha.item.PlaItem;
 import net.mcreator.simpleelectronicsalpha.item.PlaDirtyItem;
 import net.mcreator.simpleelectronicsalpha.item.PlaBucketItem;
 import net.mcreator.simpleelectronicsalpha.item.PlaBottleItem;
 import net.mcreator.simpleelectronicsalpha.item.PhotoresistorItem;
+import net.mcreator.simpleelectronicsalpha.item.MotherboardItem;
+import net.mcreator.simpleelectronicsalpha.item.MmoryItem;
 import net.mcreator.simpleelectronicsalpha.item.MetalBoxItem;
 import net.mcreator.simpleelectronicsalpha.item.MagnetItem;
 import net.mcreator.simpleelectronicsalpha.item.LedYellowItem;
@@ -39,13 +46,19 @@ import net.mcreator.simpleelectronicsalpha.item.LedGreenItem;
 import net.mcreator.simpleelectronicsalpha.item.LedBlueItem;
 import net.mcreator.simpleelectronicsalpha.item.IsolatedCopperWireItem;
 import net.mcreator.simpleelectronicsalpha.item.GlassesItem;
+import net.mcreator.simpleelectronicsalpha.item.EmptySpoolItem;
 import net.mcreator.simpleelectronicsalpha.item.DiodeItem;
+import net.mcreator.simpleelectronicsalpha.item.CordItem;
 import net.mcreator.simpleelectronicsalpha.item.CopperWireItem;
 import net.mcreator.simpleelectronicsalpha.item.CopperCoilItem;
 import net.mcreator.simpleelectronicsalpha.item.CapacitorItem;
+import net.mcreator.simpleelectronicsalpha.item.CameraItem;
+import net.mcreator.simpleelectronicsalpha.item.CPUItem;
 import net.mcreator.simpleelectronicsalpha.item.BoilerItem;
 import net.mcreator.simpleelectronicsalpha.item.AntennaItem;
+import net.mcreator.simpleelectronicsalpha.item.AccumulatorItem;
 import net.mcreator.simpleelectronicsalpha.item.AABatteryItem;
+import net.mcreator.simpleelectronicsalpha.block.display.ExtractorDisplayItem;
 import net.mcreator.simpleelectronicsalpha.SimpleElectronicsAlphaMod;
 
 public class SimpleElectronicsAlphaModItems {
@@ -83,10 +96,22 @@ public class SimpleElectronicsAlphaModItems {
 	public static final RegistryObject<Item> PLA = REGISTRY.register("pla", () -> new PlaItem());
 	public static final RegistryObject<Item> PLA_DIRTY = REGISTRY.register("pla_dirty", () -> new PlaDirtyItem());
 	public static final RegistryObject<Item> AA_BATTERY = REGISTRY.register("aa_battery", () -> new AABatteryItem());
-	public static final RegistryObject<Item> TIMER_BOMB = block(SimpleElectronicsAlphaModBlocks.TIMER_BOMB,
-			SimpleElectronicsAlphaModTabs.TAB_SIMPLE_ELECTRONICS_TAB);
-	public static final RegistryObject<Item> TABLE = block(SimpleElectronicsAlphaModBlocks.TABLE,
-			SimpleElectronicsAlphaModTabs.TAB_SIMPLE_ELECTRONICS_TAB);
+	public static final RegistryObject<Item> TIMER_BOMB = block(SimpleElectronicsAlphaModBlocks.TIMER_BOMB, SimpleElectronicsAlphaModTabs.TAB_SIMPLE_ELECTRONICS_TAB);
+	public static final RegistryObject<Item> TABLE = block(SimpleElectronicsAlphaModBlocks.TABLE, SimpleElectronicsAlphaModTabs.TAB_SIMPLE_ELECTRONICS_TAB);
+	public static final RegistryObject<Item> EXTRACTOR = REGISTRY.register(SimpleElectronicsAlphaModBlocks.EXTRACTOR.getId().getPath(),
+			() -> new ExtractorDisplayItem(SimpleElectronicsAlphaModBlocks.EXTRACTOR.get(), new Item.Properties().tab(SimpleElectronicsAlphaModTabs.TAB_SIMPLE_ELECTRONICS_TAB)));
+	public static final RegistryObject<Item> ACCUMULATOR = REGISTRY.register("accumulator", () -> new AccumulatorItem());
+	public static final RegistryObject<Item> MOTHERBOARD = REGISTRY.register("motherboard", () -> new MotherboardItem());
+	public static final RegistryObject<Item> CAMERA = REGISTRY.register("camera", () -> new CameraItem());
+	public static final RegistryObject<Item> CORD = REGISTRY.register("cord", () -> new CordItem());
+	public static final RegistryObject<Item> POWER_SUPPLY = REGISTRY.register("power_supply", () -> new PowerSupplyItem());
+	public static final RegistryObject<Item> MMORY = REGISTRY.register("mmory", () -> new MmoryItem());
+	public static final RegistryObject<Item> CPU = REGISTRY.register("cpu", () -> new CPUItem());
+	public static final RegistryObject<Item> RAM = REGISTRY.register("ram", () -> new RamItem());
+	public static final RegistryObject<Item> EMPTY_SPOOL = REGISTRY.register("empty_spool", () -> new EmptySpoolItem());
+	public static final RegistryObject<Item> PLA_SPOOL = REGISTRY.register("pla_spool", () -> new PlaSpoolItem());
+	public static final RegistryObject<Item> SERVO_MOTOR = REGISTRY.register("servo_motor", () -> new ServoMotorItem());
+	public static final RegistryObject<Item> STEPPER_MOTOR = REGISTRY.register("stepper_motor", () -> new StepperMotorItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

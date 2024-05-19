@@ -13,6 +13,8 @@
  */
 package net.mcreator.simpleelectronicsalpha;
 
+import software.bernie.geckolib3.GeckoLib;
+
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
@@ -29,6 +31,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.mcreator.simpleelectronicsalpha.init.SimpleElectronicsAlphaModTabs;
 import net.mcreator.simpleelectronicsalpha.init.SimpleElectronicsAlphaModItems;
 import net.mcreator.simpleelectronicsalpha.init.SimpleElectronicsAlphaModBlocks;
+import net.mcreator.simpleelectronicsalpha.init.SimpleElectronicsAlphaModBlockEntities;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -39,8 +42,7 @@ public class SimpleElectronicsAlphaMod {
 	public static final Logger LOGGER = LogManager.getLogger(SimpleElectronicsAlphaMod.class);
 	public static final String MODID = "simple_electronics_alpha";
 	private static final String PROTOCOL_VERSION = "1";
-	public static final SimpleChannel PACKET_HANDLER = NetworkRegistry.newSimpleChannel(new ResourceLocation(MODID, MODID), () -> PROTOCOL_VERSION,
-			PROTOCOL_VERSION::equals, PROTOCOL_VERSION::equals);
+	public static final SimpleChannel PACKET_HANDLER = NetworkRegistry.newSimpleChannel(new ResourceLocation(MODID, MODID), () -> PROTOCOL_VERSION, PROTOCOL_VERSION::equals, PROTOCOL_VERSION::equals);
 	private static int messageID = 0;
 
 	public SimpleElectronicsAlphaMod() {
@@ -49,10 +51,12 @@ public class SimpleElectronicsAlphaMod {
 		SimpleElectronicsAlphaModBlocks.REGISTRY.register(bus);
 		SimpleElectronicsAlphaModItems.REGISTRY.register(bus);
 
+		SimpleElectronicsAlphaModBlockEntities.REGISTRY.register(bus);
+
+		GeckoLib.initialize();
 	}
 
-	public static <T> void addNetworkMessage(Class<T> messageType, BiConsumer<T, FriendlyByteBuf> encoder, Function<FriendlyByteBuf, T> decoder,
-			BiConsumer<T, Supplier<NetworkEvent.Context>> messageConsumer) {
+	public static <T> void addNetworkMessage(Class<T> messageType, BiConsumer<T, FriendlyByteBuf> encoder, Function<FriendlyByteBuf, T> decoder, BiConsumer<T, Supplier<NetworkEvent.Context>> messageConsumer) {
 		PACKET_HANDLER.registerMessage(messageID, messageType, encoder, decoder, messageConsumer);
 		messageID++;
 	}
